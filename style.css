@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+    header h1 {
+        color: #0f172a;
+    }
+
+    header p {
+        text-align: center;
+        padding: 20px;
+        color: #64748b;
+    }
+
+nav {
+    text-align: right;
+    background-color: #333;
+    padding: 15px 30px;
+}
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-left: 1px solid white;
+        display: inline-block;
+    }
+
+        nav a:first-child {
+            border-left: none;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+            font-weight: bold;
+        }
+
+.team {
+    text-align: center;
+    width: 100%;
+}
+
+.card {
+    display: inline-block;
+    vertical-align: top;
+    width: 260px;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    overflow: visible;
+}
+
+    .card h2 {
+        font-size: 20px;
+        color: #333;
+    }
+
+    .card p {
+        color: #666;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+.avatar {
+    position: relative;
+    text-align: center;
+}
+
+    .avatar img {
+        width: 120px;
+        height: 120px;
+        object-position: center 20%;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #38bdf8;
+        cursor: pointer;
+    }
+
+.tooltip {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    width: 250px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #222;
+    color: white;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    z-index: 100;
+}
+
+.tooltip-title {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #38bdf8;
+}
+
+.tooltip-role {
+    display: block;
+    margin-bottom: 8px;
+    color: #94a3b8;
+}
+
+.tooltip p {
+    margin: 0;
+    line-height: 1.5;
+    color: #e2e8f0;
+}
+
+.avatar:hover .tooltip {
+    display: block;
+}
